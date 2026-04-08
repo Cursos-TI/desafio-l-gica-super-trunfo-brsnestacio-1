@@ -19,7 +19,7 @@ struct Carta {
     int pontosTuristicos;
 };
 
-// Função para limpar buffer
+// Função para limpar buffer a cada scanf
 void limparBufferEntrada() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
@@ -30,7 +30,7 @@ int main() {
     int totalCartas = 0;
     int opcao;
 
-    // Laço principal do menu
+    // Laço principal do menu que vai ser exibido pro usuario
     do {
         printf("\n=== MENU ===\n");
         printf("1 - Cadastrar cartas\n");
